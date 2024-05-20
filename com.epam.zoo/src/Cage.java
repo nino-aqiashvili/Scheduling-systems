@@ -1,6 +1,5 @@
 class Cage {
     private String name;
-
     public Cage(String name) {
         this.name = name;
     }

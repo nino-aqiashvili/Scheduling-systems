@@ -18,11 +18,10 @@ public abstract class Animal {
         return foodAmountPerMeal;
     }
     public FoodType getFoodType() {return foodType;}
-    public static void main(String[] args) {
+    public static void (String[] args) {
         ArrayList<String> food = new ArrayList<String>();
         food.add("Meat");
         food.add("Grass");
         food.add("Fruit");
-        System.out.println(food);
     }
 }

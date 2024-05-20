@@ -7,6 +7,7 @@ class FeedingTime {
         feedingTimes.put(new Crocodile(""), new LocalTime[]{LocalTime.of(14, 0)});
         feedingTimes.put(new Monkey(""), new LocalTime[]{LocalTime.of(12, 0), LocalTime.of(20, 0)});
     }
+
     public static String getFeedingInfo(LocalTime inputTime) {
         for (Map.Entry<Animal, LocalTime[]> entry : feedingTimes.entrySet()) {
             Animal animal = entry.getKey();
