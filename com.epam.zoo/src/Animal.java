@@ -1,28 +1,28 @@
+import java.time.LocalTime;
+import java.util.*;
 public abstract class Animal {
-    public Object food;
-    protected String name;
-    protected String foodType;
-    protected int foodAmountPerMeal;
+    private String name;
+    private FoodType foodType;
+    private int foodAmountPerMeal;
 
-    public Animal(String name, String foodType, int foodAmountPerMeal) {
+    public Animal(String name, FoodType foodType, int foodAmountPerMeal) {
         this.name = name;
         this.foodType = foodType;
         this.foodAmountPerMeal = foodAmountPerMeal;
     }
-
-    public abstract String getEnclosure();
-
-    public abstract String getCageType();
-
+    public abstract Enclosure getEnclosure();
     public String getName() {
         return name;
     }
-
     public int getFoodAmountPerMeal() {
         return foodAmountPerMeal;
     }
-
-    public Object getFood() {
-        return food;
+    public FoodType getFoodType() {return foodType;}
+    public static void main(String[] args) {
+        ArrayList<String> food = new ArrayList<String>();
+        food.add("Meat");
+        food.add("Grass");
+        food.add("Fruit");
+        System.out.println(food);
     }
 }
